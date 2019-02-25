@@ -13,20 +13,53 @@ namespace ConsoleApplication11
     {
         static void Main(string[] args)
         {
-
+            string a1, b1, c1, D1;
             Double a, b, c, D;
+            a1 = args[0];
+            b1 = args[1];
+            c1 = args[2];
+            D1 = args[3];
+            a = Convert.ToDouble(args[0]);
+            b = Convert.ToDouble(args[1]);
+            c = Convert.ToDouble(args[2]);
+            D = Convert.ToDouble(args[3]);
 
-            Console.WriteLine("Введите коэффиценты квадратного уравнения a,b,c");
+            /* try {
+                 a = Convert.ToDouble(args[0]);}
+             catch (ArgumentException)
+             {Console.WriteLine("Ошибка аргумента"); }
+             try
+             {
+                 b = Convert.ToDouble(args[1]);
+             }
+             catch (ArgumentException)
+             { Console.WriteLine("Ошибка аргумента"); }
+             try
+             {
+                 c = Convert.ToDouble(args[2]); 
+             }
+             catch (ArgumentException)
+             { Console.WriteLine("Ошибка аргумента"); }
+             try
+             {
+                 D = Convert.ToDouble(args[3]); ;
+             }
+             catch (ArgumentException)
+             { Console.WriteLine("Ошибка аргумента"); }
+             */
 
-            Console.WriteLine("Введите a: ");
-            a = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите b: ");
-            b = Convert.ToDouble(Console.ReadLine());
+            /*          Console.WriteLine("Введите коэффиценты квадратного уравнения a,b,c");
 
-            Console.WriteLine("Введите c: ");
-            c = Convert.ToDouble(Console.ReadLine());
+                      Console.WriteLine("Введите a: ");
+                      a = Convert.ToDouble(Console.ReadLine());
 
+                      Console.WriteLine("Введите b: ");
+                      b = Convert.ToDouble(Console.ReadLine());
+
+                      Console.WriteLine("Введите c: ");
+                      c = Convert.ToDouble(Console.ReadLine());
+                      */
             D = Math.Pow(b, 2) - 4 * a * c;
 
             if (a == 0 && b == 0)
